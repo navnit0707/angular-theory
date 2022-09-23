@@ -90,8 +90,8 @@ point.draw();
 //Constructor : one class can have only one 
 
 class Point2{
-    x1: number ;
-    y1: number ;
+    x1: number;
+    y1: number;
 
    // constructor(x: number,y: number){ 
     // ?addign thismeans that parameter is optional and once we add a optional
