@@ -1,3 +1,6 @@
+//got to line 150 to understand this 
+import {Point5} from "./point5";
+
 
 
 // let will convert into var while transpile if let produce any error 
@@ -109,6 +112,45 @@ class Point2{
 
 let point2 = new Point2();
 point2.draw();
+
+// access modifier so that we can use public ,private , protected property
+// converting above code to use access modifier
+
+class Point3{
+    private x1:number;
+    private x2: number;
+
+    constructor(x1?: number, y1?: number){
+        this.x1 = x1;
+        this.y1 = y1;
+    }
+    draw(){
+        console.log("x1: " +this.x1 + " y1: " + this.y1);
+    }
+}
+let point3 = new Point3();
+point3.draw();
+
+// can be compressed to more type to remove ugly initialisation
+// typescript compiler will auto generate the required code
+
+class Point4{
+    
+    //if public then write public too in the params
+    constructor(private x1?: number, private y1?: number){
+        this.x1 = x1;
+        this.y1 = y1;
+    }
+    draw(){
+        console.log("x1: " +this.x1 + " y1: " + this.y1);
+    }
+}
+let point4 = new Point4();
+point4.draw();
+
+//module 
+let point5 = new Point5();
+point5.draw();
 
 
 
