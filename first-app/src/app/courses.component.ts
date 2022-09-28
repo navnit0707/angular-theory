@@ -3,16 +3,18 @@ import { Component } from "@angular/core";
 @Component({
     selector: 'courses',
 
-    //template: '<h2>{{title}}</h2>' // data binding to the view
-    
-    template: '<h2>{{ getTitle()}}</h2>'
+    template: `
+        <h2>{{ title}}</h2>
+        <ul>
+            <li *ngFor="let course of courses">
+                {{course}}
+            </li>
+        </ul>
+
+     ` 
 })
 
 export class CoursesComponent{
     title = "List of courses";
-
-    getTitle(){                 //definign method
-        return this.title;
-    }
-
+    courses = ["course1","course2","course3"];
 }
