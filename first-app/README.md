@@ -26,7 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
+## Components
+components  encapsulate the data, logic aand html markup for the view
 ## Component manually
 step 1 : created a component using @angular/core
 register in Decorator , that marks a class as an Angular component and provides configuration metadata that determines how the component should be processed, instantiated, and used at runtime.
@@ -38,3 +39,5 @@ step 3 : Used that component in app.component to render
 
 ## creating Component using cli
 ng g c course  // g means generate c means component course is the       name of the component
+
+#Templates
