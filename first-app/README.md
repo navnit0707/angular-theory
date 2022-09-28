@@ -40,4 +40,15 @@ step 3 : Used that component in app.component to render
 ## creating Component using cli
 ng g c course  // g means generate c means component course is the       name of the component
 
-#Templates
+## Directives 
+used to manuplate the dom either delete,update etc
+ex 
+<ul>
+    <li *ngFor="let course for courses">
+        {{course}}
+    </li>
+</ul>
+
+## services
+
+in angular it is recommended to use only the no functional part in component so thats we use services so that we can re use it later 
