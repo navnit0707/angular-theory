@@ -5,10 +5,10 @@ import { Component } from "@angular/core";
     selector: 'courses',
 
     template: `
-        <button class="btn btn-primary" [class.active]="isActive">Save</button>
+        <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button>
     `
 })
 
 export class CoursesComponent{
-    isActive = true;
+    isActive = false;
 }
