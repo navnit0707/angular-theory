@@ -26,6 +26,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+
+# Order in which i learnt
+
 ## Components
 components  encapsulate the data, logic aand html markup for the view
 ## Component manually
@@ -43,12 +46,18 @@ ng g c course  // g means generate c means component course is the       name of
 ## Directives 
 used to manuplate the dom either delete,update etc
 ex 
-<ul>
+"<ul>
     <li *ngFor="let course for courses">
         {{course}}
     </li>
 </ul>
+"
 
 ## services
 
 in angular it is recommended to use only the no functional part in component so thats we use services so that we can re use it later 
+
+## Display data
+## Apply classes / styles dynamically
+## Format data using pipes
+## Handle events
