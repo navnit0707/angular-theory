@@ -77,3 +77,6 @@ calling stopPropogation() on event willl stop bubbling
  
 ## template variable 
 can be used to store data which is inputed by user
+
+## pipe
+pipe is used to control or alter the output like converting it to uper case lowercase etc
