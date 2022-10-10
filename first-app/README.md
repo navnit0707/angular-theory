@@ -74,4 +74,6 @@ example
 in this if we have any click method over both the div then first inner will be printed then outer
 
 calling stopPropogation() on event willl stop bubbling
-
+ 
+## template variable 
+can be used to store data which is inputed by user

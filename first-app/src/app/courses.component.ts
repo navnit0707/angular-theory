@@ -4,13 +4,14 @@ import { Component } from "@angular/core";
     selector: 'courses',
 
     template: `
-        <input (keyup.enter)="onKeyUp()" />
+        <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
     `
 })
 
 export class CoursesComponent{
+    email = "me@example.com"
   onKeyUp(){
-    console.log("Enter was pressed")
+    console.log(this.email)
   }
     
 
