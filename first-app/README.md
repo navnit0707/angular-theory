@@ -80,3 +80,11 @@ can be used to store data which is inputed by user
 
 ## pipe
 pipe is used to control or alter the output like converting it to uper case lowercase etc
+
+## custom pipe 
+
+1) first create a .pipe.ts file to define the pipe behaviour
+ex summary.pipe.ts
+    
+2) register it to module 
+3) use the pipe
