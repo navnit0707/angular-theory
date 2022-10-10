@@ -61,3 +61,17 @@ in angular it is recommended to use only the no functional part in component so 
 ## Apply classes / styles dynamically
 ## Format data using pipes
 ## Handle events
+
+event bubbling :- 
+if we have 2 nested elements and we try to click it 
+then the event bubbling concept will come in picture 
+example
+`<div>
+    outer
+    <div>inner</div>
+</div>`
+
+in this if we have any click method over both the div then first inner will be printed then outer
+
+calling stopPropogation() on event willl stop bubbling
+

@@ -1,14 +1,17 @@
-import { CoursesService } from './courses.service';
 import { Component } from "@angular/core";
 
 @Component({
     selector: 'courses',
 
     template: `
-        <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button>
+        <input (keyup.enter)="onKeyUp()" />
     `
 })
 
 export class CoursesComponent{
-    isActive = false;
-}
+  onKeyUp(){
+    console.log("Enter was pressed")
+  }
+    
+
+} 
